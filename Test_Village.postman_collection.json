@@ -1,0 +1,133 @@
+{
+	"info": {
+		"_postman_id": "ab9a3496-a41a-4487-a0f1-e5a0b5ac47c4",
+		"name": "Test_Village",
+		"description": "Tugas Syahnan Afifah dari Universitas Pasundan Bandung dalam membuat REST API data desa di Indonesia.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "19532391",
+		"_collection_link": "https://www.postman.com/planetary-capsule-832895/workspace/pretest-backend/collection/19532391-ab9a3496-a41a-4487-a0f1-e5a0b5ac47c4?action=share&source=collection_link&creator=19532391"
+	},
+	"item": [
+		{
+			"name": "Show Villages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/desa/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "All Villages",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/desa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Edit Village",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\t\"code\":\"1101012001\",\r\n\t\"district_code\":\"110101\",\r\n\t\"name\":\"EDITED KEUDE BAKONGAN\",\r\n\t\"meta\":\"{\\\"lat\\\":\\\"2.9300043\\\",\\\"long\\\":\\\"97.4732991\\\",\\\"pos\\\":\\\"23773\\\"}\",\r\n\t\"created_at\":\"2024-06-19T12:34:29.000000Z\",\r\n\t\"updated_at\":\"2024-06-19T12:34:29.000000Z\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/desa/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Village",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n\"code\":\"1101019001\",\r\n\"district_code\":\"110101\",\r\n\"name\":\"Percobaan\",\r\n\"meta\":\"{\\\"lat\\\":\\\"2.9300043\\\",\\\"long\\\":\\\"97.4732991\\\",\\\"pos\\\":\\\"23773\\\"}\",\r\n\"created_at\":\"2024-06-19T12:34:29.000000Z\",\"updated_at\":\"2024-06-19T12:34:29.000000Z\"}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/api/desa",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete Village",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/api/desa/1",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"api",
+						"desa",
+						"1"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
